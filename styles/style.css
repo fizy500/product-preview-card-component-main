@@ -1,0 +1,117 @@
+/*  */
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+
+body {
+    background-color: hsl(30, 38%, 92%);
+}
+
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.flex-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+    border-radius: 5px;
+    overflow: hidden;
+    max-width: 100%;
+    height: 100%;
+}
+
+.display {
+    background-image: url("/images/image-product-desktop.jpg");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 250px;
+    min-height: 370px;
+    /* border-radius: 5px; */
+    padding: 20px;
+    border: 2px dotted red;
+}
+
+.details {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: space-evenly;
+    width: 250px;
+    background-color: hsl(0, 0%, 100%);
+    /* border-radius: 5px; */
+    min-height: 370px;
+    padding-right: 20px;
+    padding-left: 20px;
+    padding-bottom: 9px;
+}
+
+.perfume {
+    font-family:Montserrat;
+    text-transform: uppercase;
+}
+
+.details p:last-of-type {
+    color: hsl(158, 36%, 37%);
+}
+
+.details a {
+    text-decoration: none;
+    padding: 10px;
+    text-align: center;
+    font-family:Montserrat;
+    border-radius: 5px;
+    background-color: hsl(158, 36%, 37%);
+    width: 80%;
+    color: white;
+}
+.text{
+    font-family:Montserrat;
+}
+
+.details a:hover {
+    background-color: hsl(212, 21%, 14%);
+}
+
+h1 {
+    font-family: Fraunces;
+    color: hsl(212, 21%, 14%);
+}
+
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.current-price {
+    font-family: Fraunces;
+    font-size: 25px;
+    color: hsl(158, 36%, 37%);
+}
+
+.previous-price {
+    text-decoration: line-through;
+    padding-right: 80px;
+    font-family:Montserrat;
+}
+
+@media only screen and(width:595px) {
+    body {
+        background-image: url("/images/image-product-mobile.jpg");
+    }
+
+    .display {
+        min-height: 200px;
+    }
+
+    .details {
+        min-height: 300px;
+    }
+
+}
