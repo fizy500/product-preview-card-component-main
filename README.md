@@ -24,7 +24,7 @@ Users should be able to:
 
 ### Links
 
-- Live Site URL: [View site](https://your-live-site-url.com)
+- Live Site URL: [View site](https://order-checkout.netlify.app/)
 
 ## My process
 
