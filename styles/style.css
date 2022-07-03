@@ -1,6 +1,17 @@
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&family=Montserrat:wght@500;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,700&display=swap');
+html,body {
+    width: 100%;
+    height: 100%;
+    margin: 0px;
+    padding: 0px;
+}
 
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
 body {
     background-color: hsl(30, 38%, 92%);
 }
@@ -18,7 +29,7 @@ main {
     align-items: center;
     flex-direction: row;
     flex-wrap: wrap;
-    border-radius: 5px;
+    border-radius:10px;
     overflow: hidden;
     max-width: 100%;
     height: 100%;
@@ -30,11 +41,11 @@ main {
     background-repeat: no-repeat;
     background-size: cover;
     width:300px;
-    min-height:450px;
+    min-height:420px;
 }
 .details-wrapper{
     width:300px;
-    min-height:450px;
+    min-height:420px;
     background-color: hsl(0, 0%, 100%);
 }
 
@@ -42,21 +53,51 @@ main {
     height:300px;
     padding:30px;
 }
-
 .perfume {
     color: hsl(228, 12%, 48%);
     font-family:Montserrat;
     text-transform: uppercase;
-    margin:0rem;
+    margin:15px 0;
+}
+h1 {
+    font-family: Fraunces;
+    color: hsl(212, 21%, 14%);
+    font-weight: 700;
+    line-height:30px;
+}
+.text{
+    color: hsl(228, 12%, 48%);
+    font-family:Montserrat;
+    font-size:1.1rem;
+    line-height:17px;
+    margin:10px 0;
+
+}
+.price {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin:20px 0;
+}
+.current-price {
+    font-family: Fraunces;
+    font-size:1.5rem;
+    color: hsl(158, 36%, 37%);
+}
+.previous-price {
+    text-decoration: line-through;
+    padding-right:50px;
+    font-family:Montserrat;
+    color:hsl(228, 12%, 48%);
 }
 
-.btn-container{
+.button-container{
     display: flex;
     justify-content:center;
     align-items: center;
 }
 
-.details a {
+.button{
     text-decoration: none;
     padding:15px;
     text-align: center;
@@ -66,41 +107,13 @@ main {
     width:100%;
     color: white;
 }
-.text{
-    color: hsl(228, 12%, 48%);
-    font-family:Montserrat;
-    font-size:1.1rem;
-    line-height:17px;
-    margin: 0px;
+.button:hover{
+    background-color:hsl(158, 36%, 25%);
+}
+.button:active{
+    background-color:hsl(158, 36%, 50%) ;
 }
 
-.details a:hover {
-    background-color: hsl(212, 21%, 14%);
-}
-
-h1 {
-    font-family: Fraunces;
-    color: hsl(212, 21%, 14%);
-    font-weight: 700;
-}
-
-.price {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-.current-price {
-    font-family: Fraunces;
-    font-size:1.5rem;
-    color: hsl(158, 36%, 37%);
-}
-
-.previous-price {
-    text-decoration: line-through;
-    padding-right:50px;
-    font-family:Montserrat;
-    color:hsl(228, 12%, 48%);
-}
 .attribution {
     font-size:.7rem;
     text-align: center;
@@ -111,13 +124,20 @@ h1 {
     color: hsl(228, 45%, 44%);
     text-decoration:none;
   }
-@media screen and(max-width:500px) {
+  /* Media Queries */
+  
+@media screen and (max-width:590px) {
+    .flex-container{
+        margin-top: 20px;
+        flex-direction: column;
+    }
     .display {
+        
         background-image: url("/images/image-product-mobile.jpg");
         background-position: center;
         background-repeat: no-repeat;
         background-size: cover;
         width:300px;
-        min-height:200px;
+        min-height:270px;
     }
 }

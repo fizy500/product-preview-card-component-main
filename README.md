@@ -32,7 +32,6 @@ Users should be able to:
 
 - Semantic HTML5 markup
 - Flexbox
-
 ## Author
 
 - Website - [Otuekong Arthur](https://otuekong-arthur.netlify.app/)
